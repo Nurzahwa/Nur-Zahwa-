@@ -1,39 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Home</title>
+  <meta charset="UTF-8">
+  <title>Tugas 1</title>
+
   <style>
-    * {margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif;}
-    body {background: linear-gradient(120deg,#1e3c72,#2a5298); color:white;}
-    nav {background: rgba(0,0,0,0.7); padding:15px; text-align:center;}
-    nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
-    nav a:hover {color:#00d4ff;}
-    .container {padding:40px; text-align:center;}
-    .card {background:rgba(255,255,255,0.1); padding:20px; border-radius:15px; margin:20px auto; max-width:600px;}
-    footer {margin-top:40px; padding:15px; background:rgba(0,0,0,0.7);}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Card */
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    /* Biodata */
+    .profile {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Galeri */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Video */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      text-align: center;
+      background: rgba(0,0,0,0.7);
+    }
   </style>
 </head>
+
 <body>
 
+<!-- Navbar -->
 <nav>
-  <a href="index.html">Home</a>
-  <a href="biodata.html">Biodata</a>
-  <a href="galery.html">Galeri</a>
-  <a href="video.html">Video</a>
+  <a href="#">Tugas 1</a>
+  <a href="#">Tugas 2 (Coming Soon)</a>
 </nav>
 
+<!-- BIODATA -->
+<h2>Biodata</h2>
 <div class="container">
-  <h1>Selamat Datang wirrr</h1>
-  <p> ini Website tugas saya menggunakan HTML dan CSS yang menarik 😎</p>
-
   <div class="card">
-    <h2>Halo 👋</h2>
-    <p>Ini adalah halaman utama website saya.</p>
+    <img src="https://via.placeholder.com/150" class="profile">
+    <p><b>Nama:</b> Nur Zahwa</p>
+    <p><b>Alamat:</b> Banjarmasin</p>
+    <p><b>Hobi:</b> Olahraga</p>
   </div>
 </div>
 
+<!-- GALERI -->
+<h2>Galeri</h2>
+<div class="gallery">
+  <img src="https://via.placeholder.com/300">
+  <img src="https://via.placeholder.com/300">
+  <img src="https://via.placeholder.com/300">
+  <img src="https://via.placeholder.com/300">
+</div>
+
+<!-- VIDEO -->
+<h2>Video</h2>
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+</div>
+
+<!-- Footer -->
 <footer>
-  <p>© 2026 Website Saya</p>
+  <p>© 2026 Tugas 1 Website</p>
 </footer>
 
 </body>
