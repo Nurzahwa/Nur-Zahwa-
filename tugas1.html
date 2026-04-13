@@ -15,81 +15,62 @@
     body {
       background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
-      scroll-behavior: smooth;
     }
 
-    /* Navbar */
     nav {
       background: rgba(0,0,0,0.7);
       padding: 15px;
       text-align: center;
-      position: sticky;
-      top: 0;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
     }
 
     nav a:hover {
       color: #00d4ff;
     }
 
-    h1 {
+    h1, h2 {
       text-align: center;
       margin: 30px 0;
     }
 
-    h2 {
-      text-align: center;
-      margin: 40px 0 20px;
-    }
-
-    /* Container */
     .container {
       padding: 20px;
       text-align: center;
     }
 
-    /* Card Biodata */
+    /* Card */
     .card {
       background: rgba(255,255,255,0.1);
-      padding: 25px;
-      border-radius: 20px;
-      max-width: 400px;
-      margin: auto;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      transition: 0.3s;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 600px;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
+    /* Biodata */
     .profile {
       width: 120px;
-      height: 120px;
       border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid white;
+      margin-bottom: 10px;
     }
 
     /* Galeri */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       padding: 20px;
     }
 
     .gallery img {
       width: 100%;
-      border-radius: 15px;
+      border-radius: 10px;
       transition: 0.3s;
     }
 
@@ -98,18 +79,12 @@
     }
 
     /* Video */
-    .video-container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-
     .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
-      border-radius: 15px;
-      overflow: hidden;
+      max-width: 800px;
+      margin: auto;
     }
 
     .video-wrapper iframe {
@@ -118,7 +93,6 @@
       height: 100%;
     }
 
-    /* Footer */
     footer {
       margin-top: 40px;
       padding: 15px;
@@ -132,28 +106,23 @@
 
 <!-- Navbar -->
 <nav>
-  <a href="#biodata">Biodata</a>
-  <a href="#galeri">Galeri</a>
-  <a href="#video">Video</a>
+  <a href="#">tugas1.html</a>
+  <a href="#">tugas2.html</a>
 </nav>
 
-<h1>Tugas 1 Website</h1>
-
 <!-- BIODATA -->
-<h2 id="biodata">Biodata</h2>
+<h2>Biodata</h2>
 <div class="container">
   <div class="card">
     <img src="https://via.placeholder.com/150" class="profile">
-    <h3>Nur Zahwa</h3>
-     <p><b>Nim:</b> 2310715220002</p>
+    <p><b>Nama:</b> Nur Zahwa</p>
     <p><b>Alamat:</b> Banjarbaru</p>
-    <p><b>Hobi:</b> Bermain mobile legend</p>
-    <p><b>Email:</b> zahwa4046@gmail.com</p>
+    <p><b>Hobi:</b> Bermain game mobile legend</p>
   </div>
 </div>
 
 <!-- GALERI -->
-<h2 id="galeri">Galeri</h2>
+<h2>Galeri</h2>
 <div class="gallery">
   <img src="Rumah depan.jpeg">
   <img src="kanan.jpeg">
@@ -162,16 +131,14 @@
 </div>
 
 <!-- VIDEO -->
-<h2 id="video">Video</h2>
-<div class="video-container">
-  <div class="video-wrapper">
-    <iframe src="vidio rumah.mp4" allowfullscreen></iframe>
-  </div>
+<h2>Video</h2>
+<div class="video-wrapper">
+  <iframe src="vidio rumah.mp4" allowfullscreen></iframe>
 </div>
 
 <!-- Footer -->
 <footer>
-  <p>© 2026 Tugas 1</p>
+  <p>© 2026 Tugas 1 Website</p>
 </footer>
 
 </body>
